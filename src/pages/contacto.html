@@ -1,0 +1,154 @@
+<!--{"title": "Cotiza tu evento | Fundo Salinas", "description": "Cotiza tu evento o agenda una visita a Fundo Salinas, La Legua, Piura. Respuesta por WhatsApp al +51 996 404 372.", "nav": "contacto", "body": "page-contacto"}-->
+
+    <section class="page-hero compact">
+      <div class="container page-hero-grid">
+        <div class="page-hero-copy">
+          <nav class="crumbs hero-in" style="--d:0" aria-label="Ruta"><a href="index.html">Inicio</a><i class="ph ph-caret-right"></i><span>Contacto</span></nav>
+          <h1 class="hero-in" style="--d:1">Cotiza tu evento o <em>agenda una visita.</em></h1>
+          <p class="lead hero-in" style="--d:2">Completa el formulario y se abrirá WhatsApp con tu mensaje listo. Te respondemos con disponibilidad y una propuesta a tu medida.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0" id="cotizar">
+      <div class="container contact-grid">
+        <div class="form-card hero-in" style="--d:3" id="visita">
+          <div class="tabs" role="tablist" aria-label="Tipo de solicitud">
+            <button class="tab is-active" role="tab" data-tab="cotizar" aria-selected="true"><i class="ph ph-file-text"></i> Cotizar evento</button>
+            <button class="tab" role="tab" data-tab="visita" aria-selected="false"><i class="ph ph-footprints"></i> Agendar visita</button>
+          </div>
+
+          <div data-pane="cotizar">
+            <h2>Cuéntanos de tu evento</h2>
+            <p class="form-intro">Con estos datos armamos tu cotización.</p>
+            <form class="quote-form" data-wa="cotizar" novalidate>
+              <div class="field">
+                <label for="q-name">Nombre completo</label>
+                <input id="q-name" name="nombre" type="text" autocomplete="name" required>
+                <p class="err">Escribe tu nombre.</p>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="q-type">Tipo de evento</label>
+                  <div class="select">
+                    <select id="q-type" name="tipo" required>
+                      <option value="">Elige una opción</option>
+                      <option data-key="matrimonio">Matrimonio</option>
+                      <option data-key="quinceanero">Quinceañero o cumpleaños</option>
+                      <option data-key="corporativo">Evento corporativo o sindical</option>
+                      <option data-key="familiar">Reunión familiar</option>
+                      <option data-key="deportivo">Campeonato deportivo</option>
+                      <option data-key="fiesta">Fiesta o rumba</option>
+                      <option data-key="camping">Camping o full day</option>
+                      <option data-key="otro">Otro</option>
+                    </select>
+                  </div>
+                  <p class="err">Elige el tipo de evento.</p>
+                </div>
+                <div class="field">
+                  <label for="q-guests">N° de invitados</label>
+                  <input id="q-guests" name="invitados" type="number" inputmode="numeric" min="1" max="5000" required>
+                  <p class="err">Indica cuántas personas, aproximadamente.</p>
+                </div>
+              </div>
+              <div class="field">
+                <label for="q-date">Fecha tentativa</label>
+                <input id="q-date" name="fecha" type="date">
+                <p class="hint">Si aún no tienes fecha, déjalo en blanco.</p>
+              </div>
+              <fieldset class="field">
+                <legend>¿Qué te interesa usar?</legend>
+                <div class="chips-check">
+                  <label><input type="checkbox" name="servicios" value="Salón de eventos"><span>Salón</span></label>
+                  <label><input type="checkbox" name="servicios" value="Piscinas"><span>Piscinas</span></label>
+                  <label><input type="checkbox" name="servicios" value="Cancha sintética"><span>Cancha</span></label>
+                  <label><input type="checkbox" name="servicios" value="Palapas y parrilla"><span>Palapas y parrilla</span></label>
+                  <label><input type="checkbox" name="servicios" value="Camping"><span>Camping</span></label>
+                  <label><input type="checkbox" name="servicios" value="Carta y catering"><span>Carta y catering</span></label>
+                  <label><input type="checkbox" name="servicios" value="Sonido y DJ"><span>Sonido y DJ</span></label>
+                </div>
+              </fieldset>
+              <div class="field">
+                <label for="q-msg">Mensaje <span class="opt">(opcional)</span></label>
+                <textarea id="q-msg" name="mensaje" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-gold btn-lg btn-block"><i class="ph ph-whatsapp-logo"></i> Enviar por WhatsApp</button>
+              <p class="form-note" role="status" aria-live="polite"></p>
+              <a class="btn btn-outline btn-block wa-link" href="https://wa.me/51996404372" target="_blank" rel="noopener" hidden><i class="ph ph-arrow-square-out"></i> Abrir WhatsApp con mi mensaje</a>
+            </form>
+          </div>
+
+          <div data-pane="visita" hidden>
+            <h2>Ven a conocer el fundo</h2>
+            <p class="form-intro">Elige un día y te confirmamos la hora de tu visita.</p>
+            <form class="quote-form" data-wa="visita" novalidate>
+              <div class="field">
+                <label for="v-name">Nombre completo</label>
+                <input id="v-name" name="nombre" type="text" autocomplete="name" required>
+                <p class="err">Escribe tu nombre.</p>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="v-date">Día preferido</label>
+                  <input id="v-date" name="fecha" type="date">
+                </div>
+                <div class="field">
+                  <label for="v-time">Horario</label>
+                  <div class="select">
+                    <select id="v-time" name="horario">
+                      <option value="">A coordinar</option>
+                      <option>Mañana</option>
+                      <option>Tarde</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="field">
+                <label for="v-type">¿Qué evento estás planeando? <span class="opt">(opcional)</span></label>
+                <input id="v-type" name="tipo" type="text">
+              </div>
+              <div class="field">
+                <label for="v-msg">Mensaje <span class="opt">(opcional)</span></label>
+                <textarea id="v-msg" name="mensaje" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-gold btn-lg btn-block"><i class="ph ph-whatsapp-logo"></i> Pedir mi visita por WhatsApp</button>
+              <p class="form-note" role="status" aria-live="polite"></p>
+              <a class="btn btn-outline btn-block wa-link" href="https://wa.me/51996404372" target="_blank" rel="noopener" hidden><i class="ph ph-arrow-square-out"></i> Abrir WhatsApp con mi mensaje</a>
+            </form>
+          </div>
+        </div>
+
+        <aside class="info-stack">
+          <div class="info-card" data-reveal><i class="ph ph-whatsapp-logo"></i><div><small>WhatsApp y llamadas</small><strong>+51 996 404 372</strong><a class="text-link" href="https://wa.me/51996404372" target="_blank" rel="noopener">Escribir ahora <i class="ph ph-arrow-right"></i></a></div></div>
+          <div class="info-card" data-reveal style="--i:1"><i class="ph ph-envelope-simple"></i><div><small>Correo</small><strong>fundosalinaspe@gmail.com</strong></div></div>
+          <div class="info-card" data-reveal style="--i:2"><i class="ph ph-map-pin"></i><div><small>Dirección</small><strong>Vía de Evitamiento, Panamericana Norte km 994</strong><p>La Legua, Piura, Perú</p><a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=Panamericana+Norte+km+994+La+Legua+Piura" target="_blank" rel="noopener">Cómo llegar <i class="ph ph-arrow-up-right"></i></a></div></div>
+          <div class="note" data-reveal style="--i:3"><i class="ph ph-calendar-check"></i><p><strong>50% de adelanto</strong>Es lo que necesitas para separar tu fecha.</p></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="ubicacion">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <h2 class="h-md">A pocos minutos de Piura.</h2>
+          <p class="lead">Acceso directo desde la Panamericana Norte y estacionamiento privado dentro del fundo.</p>
+        </div>
+        <div class="map-wrap" data-reveal>
+          <iframe title="Mapa de ubicación de Fundo Salinas" src="https://www.google.com/maps?q=Panamericana+Norte+km+994,+La+Legua,+Piura,+Peru&amp;z=14&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="preguntas">
+      <div class="container faq-grid">
+        <h2 class="h-lg" data-reveal>Preguntas frecuentes</h2>
+        <div class="faq-list">
+          <details data-reveal><summary>¿Cuántas personas pueden asistir?</summary><p>El fundo tiene capacidad para hasta 300 personas y más. Si tu evento es más grande, escríbenos y vemos juntos la mejor distribución.</p></details>
+          <details data-reveal><summary>¿Cómo separo mi fecha?</summary><p>Con el 50% de adelanto del precio del paquete. El saldo se coordina directamente con nuestro equipo.</p></details>
+          <details data-reveal><summary>¿Qué incluye el alquiler del fundo?</summary><p>Uso exclusivo del fundo, estacionamiento privado, seguridad, energía, baños premium, mobiliario básico, sonido con sonidista y DJ, micrófono, escenario, iluminación y limpieza antes y después del evento.</p></details>
+          <details data-reveal><summary>¿Puedo visitar el fundo antes de reservar?</summary><p>Sí. Usa la pestaña «Agendar visita» o escríbenos por WhatsApp y coordinamos el día.</p></details>
+          <details data-reveal><summary>¿Tienen carta o puedo traer mi catering?</summary><p>Tenemos una carta disponible para tu evento y un área de catering con cocina equipada. Pide la carta al cotizar y te contamos las opciones.</p></details>
+          <details data-reveal><summary>¿El precio es fijo?</summary><p>Cada cotización se arma a la medida, según el tipo de evento, la fecha, el horario y el número de invitados.</p></details>
+        </div>
+      </div>
+    </section>

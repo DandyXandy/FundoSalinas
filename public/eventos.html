@@ -21,11 +21,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/vendor/phosphor/style.css">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add("js");</script>
 
 </head>
 <body class="page-eventos">
   <a class="skip-link" href="#main">Saltar al contenido</a>
   <div id="top-sentinel" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
   <header class="site-header" id="header">
     <div class="container header-inner">
       <a href="index.html" class="brand" aria-label="Fundo Salinas, ir al inicio">
@@ -188,7 +190,7 @@
         </article>
 
         <article class="event-block" id="fiestas" data-reveal>
-          <div class="event-media"><img src="assets/img/sm/vista-nocturna.webp" alt="Fiesta nocturna en el fundo" loading="lazy"></div>
+          <div class="event-media"><video muted loop playsinline preload="none" poster="assets/video/poster/escenario.webp" data-src="assets/video/escenario.mp4" aria-label="Video: orquesta en vivo en el escenario de Fundo Salinas"></video><span class="video-badge"><i class="ph ph-video-camera"></i> En vivo</span></div>
           <div class="event-body">
             <h2>Fiestas y rumbas</h2>
             <p>Fiestas de promoción, conciertos y noches de rumba con sonido potente, luces y DJ residente.</p>
@@ -308,6 +310,7 @@
     <button class="lb-btn lb-prev" aria-label="Foto anterior"><i class="ph ph-caret-left"></i></button>
     <figure class="lb-figure">
       <img id="lbImg" alt="">
+      <video id="lbVid" controls playsinline loop hidden></video>
       <figcaption id="lbCap"></figcaption>
     </figure>
     <button class="lb-btn lb-next" aria-label="Foto siguiente"><i class="ph ph-caret-right"></i></button>

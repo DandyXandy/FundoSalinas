@@ -40,6 +40,11 @@ Los estilos están en `public/assets/css/styles.css` y la lógica en `public/ass
 - **WhatsApp de cotizaciones:** `51996404372` en `main.js` (constante `WHATSAPP`) y en los enlaces `wa.me` de `src/partials/footer.html` y `src/pages/contacto.html`.
 - **Fotos de la galería:** lista `PHOTOS` en `main.js`. Las imágenes van en `public/assets/img/` (grande) y `public/assets/img/sm/` (miniatura, 720 px).
 - **Mapa:** `iframe` de `src/pages/contacto.html`.
+- **Videos:** en `public/assets/video/` (MP4 H.264 sin audio, comprimidos para web) con sus pósters en `public/assets/video/poster/`.
+  - `hero-reel.mp4` (horizontal) y `hero-reel-v.mp4` (vertical, para celular): portada del inicio. Los textos de cada escena están en `data-chapters-*` del `<video id="heroVideo">` en `src/pages/index.html`.
+  - `escenario.mp4`: fondo de la sección de sonido y DJ.
+  - `reel-*.mp4`: videos verticales del inicio, la galería y las páginas de cada espacio. Sus textos para el visor están en `VIDEOS` de `main.js`.
+  - Los videos se cargan solo cuando aparecen en pantalla y no se reproducen solos si el visitante tiene activado "reducir movimiento" o el ahorro de datos.
 
 ## Vista local
 

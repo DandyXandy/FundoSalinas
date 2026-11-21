@@ -21,11 +21,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/vendor/phosphor/style.css">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add("js");</script>
 
 </head>
 <body class="page-sector">
   <a class="skip-link" href="#main">Saltar al contenido</a>
   <div id="top-sentinel" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
   <header class="site-header" id="header">
     <div class="container header-inner">
       <a href="index.html" class="brand" aria-label="Fundo Salinas, ir al inicio">
@@ -96,7 +98,7 @@
           </div>
         </div>
         <div class="page-hero-media">
-          <figure class="phm-main hero-in" style="--d:1"><img src="assets/img/camping-atardecer.webp" alt="Carpas y palapa iluminada al atardecer" fetchpriority="high"></figure>
+          <figure class="phm-main hero-in" style="--d:1"><video muted loop playsinline preload="none" poster="assets/video/poster/reel-camping.webp" data-src="assets/video/reel-camping.mp4" aria-label="Video aéreo de carpas de camping sobre la cancha de noche"></video><span class="video-badge"><i class="ph ph-video-camera"></i> En video</span></figure>
           <figure class="phm-side hero-in" style="--d:2"><img src="assets/img/sm/sombra-arboles.webp" alt="Toldos de sombra y árboles junto a las palapas"></figure>
         </div>
       </div>
@@ -238,6 +240,7 @@
     <button class="lb-btn lb-prev" aria-label="Foto anterior"><i class="ph ph-caret-left"></i></button>
     <figure class="lb-figure">
       <img id="lbImg" alt="">
+      <video id="lbVid" controls playsinline loop hidden></video>
       <figcaption id="lbCap"></figcaption>
     </figure>
     <button class="lb-btn lb-next" aria-label="Foto siguiente"><i class="ph ph-caret-right"></i></button>

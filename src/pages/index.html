@@ -1,52 +1,40 @@
-<!--{"title": "Fundo Salinas | Local de eventos en La Legua, Piura", "description": "Local campestre para eventos en La Legua, Piura. Salón de eventos, piscinas, cancha sintética y áreas al aire libre con capacidad para hasta 300 personas y más. Cotiza por WhatsApp.", "body": "page-home", "head": "  <link rel=\"preload\" as=\"image\" href=\"assets/img/salon-luces.webp\" fetchpriority=\"high\">\n  <script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"EventVenue\",\"name\":\"Fundo Salinas\",\"description\":\"Local campestre para eventos con salón, piscinas, cancha sintética, palapas, camping y sonido profesional con DJ.\",\"telephone\":\"+51 996 404 372\",\"email\":\"fundosalinaspe@gmail.com\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Vía de Evitamiento, Panamericana Norte km 994\",\"addressLocality\":\"La Legua\",\"addressRegion\":\"Piura\",\"addressCountry\":\"PE\"},\"maximumAttendeeCapacity\":300}</script>"}-->
+<!--{"title": "Fundo Salinas | Local de eventos en La Legua, Piura", "description": "Local campestre para eventos en La Legua, Piura. Salón de eventos, piscinas, cancha sintética y áreas al aire libre con capacidad para hasta 300 personas y más. Cotiza por WhatsApp.", "body": "page-home", "head": "  <link rel=\"preload\" as=\"image\" href=\"assets/video/poster/hero-reel.webp\" media=\"(min-aspect-ratio: 4/5)\" fetchpriority=\"high\">\n  <link rel=\"preload\" as=\"image\" href=\"assets/video/poster/hero-reel-v.webp\" media=\"(max-aspect-ratio: 4/5)\" fetchpriority=\"high\">\n  <script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"EventVenue\",\"name\":\"Fundo Salinas\",\"description\":\"Local campestre para eventos con salón, piscinas, cancha sintética, palapas, camping y sonido profesional con DJ.\",\"telephone\":\"+51 996 404 372\",\"email\":\"fundosalinaspe@gmail.com\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Vía de Evitamiento, Panamericana Norte km 994\",\"addressLocality\":\"La Legua\",\"addressRegion\":\"Piura\",\"addressCountry\":\"PE\"},\"maximumAttendeeCapacity\":300}</script>"}-->
 
     <!-- ============ HERO ============ -->
     <section class="hero" aria-label="Fundo Salinas">
-      <div class="hero-stage" aria-hidden="true">
-        <div class="scene is-active">
-          <div class="panel"><img src="assets/img/salon-luces.webp" alt="" fetchpriority="high"></div>
-          <div class="panel"><img src="assets/img/salon-drapeado.webp" alt=""></div>
-          <div class="panel"><img src="assets/img/salon-bienvenidos.webp" alt=""></div>
-        </div>
-        <div class="scene">
-          <div class="panel"><img data-src="assets/img/hero-piscina.webp" alt=""></div>
-          <div class="panel"><img data-src="assets/img/piscina-ninos.webp" alt=""></div>
-          <div class="panel"><img data-src="assets/img/piscina-palapas.webp" alt=""></div>
-        </div>
-        <div class="scene">
-          <div class="panel"><img data-src="assets/img/futbol-campeonato.webp" alt=""></div>
-          <div class="panel"><img data-src="assets/img/cancha.webp" alt=""></div>
-          <div class="panel"><img data-src="assets/img/futbol-partido.webp" alt=""></div>
-        </div>
-        <div class="scene">
-          <div class="panel"><img data-src="assets/img/camping-atardecer.webp" alt=""></div>
-          <div class="panel"><img data-src="assets/img/vista-nocturna.webp" alt=""></div>
-          <div class="panel"><img data-src="assets/img/palapas-mesas.webp" alt=""></div>
-        </div>
+      <div class="hero-media" aria-hidden="true">
+        <video class="hero-video" id="heroVideo" muted playsinline loop preload="auto"
+          poster="assets/video/poster/hero-reel.webp"
+          data-land="assets/video/hero-reel.mp4" data-land-poster="assets/video/poster/hero-reel.webp"
+          data-port="assets/video/hero-reel-v.mp4" data-port-poster="assets/video/poster/hero-reel-v.webp"
+          data-chapters-land="0:Atardecer en el fundo|6.6:Noche de campeonato|13:En vivo, en el escenario"
+          data-chapters-port="0:Atardecer en el fundo|6.6:Camping sobre la cancha|13:Bienvenidos a Fundo Salinas"></video>
       </div>
 
       <div class="container hero-inner">
         <div class="hero-copy">
           <p class="eyebrow hero-in" style="--d:0">La Legua, Piura</p>
-          <h1 class="hero-title hero-in" style="--d:1">Celebra en grande, <em>a tu manera.</em></h1>
-          <p class="hero-sub hero-in" style="--d:2">Salón, piscinas, cancha y áreas verdes para celebraciones de hasta 300 personas y más, en un fundo solo para ti.</p>
-          <div class="hero-ctas hero-in" style="--d:3">
-            <a href="contacto.html#cotizar" class="btn btn-gold btn-lg">Cotizar evento <i class="ph ph-arrow-right"></i></a>
-            <a href="contacto.html#visita" class="btn btn-outline btn-lg">Agendar visita</a>
+          <h1 class="hero-title" data-split="hero">Celebra en grande, <em>a tu manera.</em></h1>
+          <p class="hero-sub hero-in" style="--d:3">Salón, piscinas, cancha y áreas verdes para celebraciones de hasta 300 personas y más, en un fundo solo para ti.</p>
+          <div class="hero-ctas hero-in" style="--d:4">
+            <a href="contacto.html#cotizar" class="btn btn-gold btn-lg" data-magnetic>Cotizar evento <i class="ph ph-arrow-right"></i></a>
+            <a href="contacto.html#visita" class="btn btn-outline btn-lg" data-magnetic>Agendar visita</a>
           </div>
         </div>
 
-        <div class="hero-controls hero-in" style="--d:4" role="tablist" aria-label="Ambientes del fundo">
-          <button class="scene-tab is-active" role="tab" aria-selected="true"><span class="scene-bar"><span></span></span><span><strong>Celebraciones</strong><small>Salón de eventos</small></span></button>
-          <button class="scene-tab" role="tab" aria-selected="false"><span class="scene-bar"><span></span></span><span><strong>Piscinas</strong><small>Adultos y niños</small></span></button>
-          <button class="scene-tab" role="tab" aria-selected="false"><span class="scene-bar"><span></span></span><span><strong>Deporte</strong><small>Cancha sintética</small></span></button>
-          <button class="scene-tab" role="tab" aria-selected="false"><span class="scene-bar"><span></span></span><span><strong>Aire libre</strong><small>Palapas y camping</small></span></button>
+        <div class="hero-foot hero-in" style="--d:5">
+          <button class="reel-toggle" id="heroToggle" type="button" aria-label="Pausar video" aria-pressed="false">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle class="ring-bg" cx="24" cy="24" r="22"/><circle class="ring" cx="24" cy="24" r="22" pathLength="100"/></svg>
+            <i class="ph ph-pause"></i>
+          </button>
+          <p class="hero-chapter" aria-live="off"><small>Fundo Salinas en video</small><span id="heroChapter">Atardecer en el fundo</span></p>
+          <a href="#capacidad" class="scroll-cue" aria-label="Bajar a la siguiente sección"><span>Descubre</span><i aria-hidden="true"></i></a>
         </div>
       </div>
     </section>
 
     <!-- ============ CAPACIDAD ============ -->
-    <section class="capacity section">
+    <section class="capacity section" id="capacidad">
       <div class="container capacity-grid">
         <p class="cap-number" aria-label="300 o más personas" data-reveal><span data-count="300">300</span><sup>+</sup></p>
         <div class="cap-copy">
@@ -60,6 +48,14 @@
         </div>
       </div>
     </section>
+
+    <!-- ============ CINTA ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Matrimonios</span><i class="ph ph-star-four"></i><span class="o">Quinceañeros</span><i class="ph ph-star-four"></i><span>Aniversarios</span><i class="ph ph-star-four"></i><span class="o">Campeonatos</span><i class="ph ph-star-four"></i><span>Full day</span><i class="ph ph-star-four"></i><span class="o">Camping</span><i class="ph ph-star-four"></i><span>Rumbas</span><i class="ph ph-star-four"></i>
+        <span>Matrimonios</span><i class="ph ph-star-four"></i><span class="o">Quinceañeros</span><i class="ph ph-star-four"></i><span>Aniversarios</span><i class="ph ph-star-four"></i><span class="o">Campeonatos</span><i class="ph ph-star-four"></i><span>Full day</span><i class="ph ph-star-four"></i><span class="o">Camping</span><i class="ph ph-star-four"></i><span>Rumbas</span><i class="ph ph-star-four"></i>
+      </div>
+    </div>
 
     <!-- ============ AMBIENTES ============ -->
     <section class="section section-alt" id="ambientes">
@@ -123,6 +119,30 @@
       </div>
     </section>
 
+    <!-- ============ VIDEOS ============ -->
+    <section class="section reels-section" data-rail>
+      <div class="container">
+        <div class="rail-head">
+          <div class="section-head" style="margin-bottom:0">
+            <p class="eyebrow" data-reveal>Fundo Salinas en video</p>
+            <h2 class="h-lg" data-reveal>Vívelo antes de <em>tu evento.</em></h2>
+            <p class="lead" data-reveal>Noches de campeonato, camping sobre la cancha y celebraciones con cientos de invitados. Toca un video para verlo en grande.</p>
+          </div>
+          <div class="rail-nav">
+            <button class="rail-btn rail-prev" aria-label="Ver videos anteriores"><i class="ph ph-arrow-left"></i></button>
+            <button class="rail-btn rail-next" aria-label="Ver más videos"><i class="ph ph-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="rail reels" data-reveal>
+          <button class="reel" type="button" data-video="reel-bienvenida" style="--i:0"><video muted loop playsinline preload="none" poster="assets/video/poster/reel-bienvenida.webp" data-src="assets/video/reel-bienvenida.mp4"></video><span class="reel-play"><i class="ph ph-play"></i></span><span class="reel-cap"><strong>Aniversarios</strong><small>Escenario y bienvenida</small></span></button>
+          <button class="reel" type="button" data-video="reel-fiesta" style="--i:1"><video muted loop playsinline preload="none" poster="assets/video/poster/reel-fiesta.webp" data-src="assets/video/reel-fiesta.mp4"></video><span class="reel-play"><i class="ph ph-play"></i></span><span class="reel-cap"><strong>Lleno total</strong><small>Cientos de invitados</small></span></button>
+          <button class="reel" type="button" data-video="reel-campeonato" style="--i:2"><video muted loop playsinline preload="none" poster="assets/video/poster/reel-campeonato.webp" data-src="assets/video/reel-campeonato.mp4"></video><span class="reel-play"><i class="ph ph-play"></i></span><span class="reel-cap"><strong>Campeonatos</strong><small>Cancha iluminada</small></span></button>
+          <button class="reel" type="button" data-video="reel-camping" style="--i:3"><video muted loop playsinline preload="none" poster="assets/video/poster/reel-camping.webp" data-src="assets/video/reel-camping.mp4"></video><span class="reel-play"><i class="ph ph-play"></i></span><span class="reel-cap"><strong>Camping</strong><small>Carpas sobre la cancha</small></span></button>
+          <button class="reel" type="button" data-video="reel-atardecer" style="--i:4"><video muted loop playsinline preload="none" poster="assets/video/poster/reel-atardecer.webp" data-src="assets/video/reel-atardecer.mp4"></video><span class="reel-play"><i class="ph ph-play"></i></span><span class="reel-cap"><strong>Atardecer</strong><small>Vista aérea del fundo</small></span></button>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ INCLUYE ============ -->
     <section class="section section-alt">
       <div class="container includes-grid">
@@ -166,7 +186,7 @@
 
     <!-- ============ RUMBA ============ -->
     <section class="rumba">
-      <div class="rumba-bg" aria-hidden="true"></div>
+      <div class="rumba-bg" aria-hidden="true"><video muted loop playsinline preload="none" poster="assets/video/poster/escenario.webp" data-src="assets/video/escenario.mp4"></video></div>
       <div class="container rumba-inner">
         <img class="rumba-logo" src="assets/img/logo-salinas.png" alt="Logo de Fundo Salinas Rumba" width="400" height="360" loading="lazy">
         <h2>La fiesta suena distinto en Fundo&nbsp;Salinas.</h2>

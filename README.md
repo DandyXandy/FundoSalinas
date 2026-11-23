@@ -40,7 +40,7 @@ Los estilos están en `public/assets/css/styles.css` y la lógica en `public/ass
 - **WhatsApp de cotizaciones:** `51996404372` en `main.js` (constante `WHATSAPP`) y en los enlaces `wa.me` de `src/partials/footer.html` y `src/pages/contacto.html`.
 - **Fotos de la galería:** lista `PHOTOS` en `main.js`. Las imágenes van en `public/assets/img/` (grande) y `public/assets/img/sm/` (miniatura, 720 px).
 - **Mapa:** `iframe` de `src/pages/contacto.html`.
-- **Dominio y portada al compartir:** el dominio está en `SITE_URL` de `build.py` (se usa en `og:url`, `canonical` y la imagen). La portada es `public/assets/img/og-fundo-salinas-cover.jpg` (1200×630). Si la cambias, usa un nombre de archivo nuevo para que WhatsApp y Facebook no muestren la versión anterior guardada en caché.
+- **Dominio y portada al compartir:** el dominio está en `SITE_URL` de `build.py` (se usa en `og:url`, `canonical` y la imagen). La portada es `public/assets/img/og-fundo-salinas-v2.jpg` (1200×630). Si la cambias, usa un nombre de archivo nuevo para que WhatsApp y Facebook no muestren la versión anterior guardada en caché.
 - **Videos:** en `public/assets/video/` (MP4 H.264 sin audio, comprimidos para web) con sus pósters en `public/assets/video/poster/`.
   - `hero-reel.mp4` (horizontal) y `hero-reel-v.mp4` (vertical, para celular): portada del inicio. Los textos de cada escena están en `data-chapters-*` del `<video id="heroVideo">` en `src/pages/index.html`.
   - `escenario.mp4`: fondo de la sección de sonido y DJ.

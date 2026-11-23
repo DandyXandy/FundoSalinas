@@ -11,6 +11,8 @@ import json
 import re
 from pathlib import Path
 
+SITE_URL = "https://fundosalinas.portfoliodandy.com"  # dominio público (sin barra final)
+
 ROOT = Path(__file__).parent
 SRC = ROOT / "src"
 OUT = ROOT / "public"
@@ -30,7 +32,11 @@ def render(page: Path) -> str:
     meta = json.loads(m.group(1))
     body = raw[m.end():]
 
-    h = (head.replace("{{TITLE}}", meta["title"])
+    slug = page.stem
+    path = "/" if slug == "index" else f"/{slug}"
+    h = (head.replace("{{SITE_URL}}", SITE_URL)
+             .replace("{{URL}}", SITE_URL + path)
+             .replace("{{TITLE}}", meta["title"])
              .replace("{{DESCRIPTION}}", meta["description"])
              .replace("{{BODY_CLASS}}", meta.get("body", ""))
              .replace("{{HEAD_EXTRA}}", meta.get("head", "")))
